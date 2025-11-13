@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React Basics</title>
+  </head>
+  <body>
+    <div class="js-container"></div>
+
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <script type="text/babel">
+      
+      const nam = <p>syedmukheeth</p>;
+      const paragraph = <p>paragraph of text</p>;
+      const button = <button>Like</button>;
+
+      const div = (
+        <div>
+          <button>hello</button>
+          <p>paragraph of text {2 + 2}</p>
+        </div>
+      );
+
+      const div2 = (
+        <div>
+          <button>Subscribe</button>
+          <p> subscribe to SAMPcode</p>
+        
+        </div>
+        
+
+      );
+      const container = document.querySelector('.js-container');
+      ReactDOM.createRoot(container).render(div2);
+    </script>
+  </body>
+</html>
